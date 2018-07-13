@@ -29,6 +29,22 @@
    <br>
    {{cd.resultado}}
 
+   <br>
+   <br>
+   <br>
+   <h3>Ingresa el Numero para tu tabla</h3>
+
+   <input type="number" name="" ng-model = "tabla">
+
+   <button ng-click="cd.multiplicar(tabla)">Generar</button><br>
+
+   La tabla es:
+
+   <div ng-repeat="data in cd.resultado_tabla">
+
+      Multiplicador:{{data.a}} * {{data.b}} = {{data.c}} <br>
+
+   </div>
 
 </body>
 </html>
